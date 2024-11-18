@@ -1,0 +1,172 @@
+/* General Reset */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Navigation Bar */
+nav {
+  background-color: #5696f6;
+  padding: 1em;
+  text-align: center;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10; /* Ensure nav is on top */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+  margin: 0 15px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: rgb(0, 0, 0);
+}
+
+/* Page Content Wrapper */
+.page-content {
+  width: 100%;
+  max-width: 800px;
+  margin-top: 100px; /* Space for the fixed navbar */
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Home Page Styles */
+.home-container h1 {
+  font-size: 3rem;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.home-container p {
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+/* Call-to-Action Button */
+.cta-btn {
+  background-color: #ff5722;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+  background-color: #e64a19;
+}
+
+/* About Page Styles */
+.about-container h2 {
+  font-size: 2.5rem;
+  color: #00bcd4;
+}
+
+.about-container p {
+  font-size: 1.5rem;
+  color: #ffffff;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Services Page Styles */
+.services-container h2 {
+  font-size: 2.5rem;
+  color: #00bcd4;
+}
+
+.services-container ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.services-container ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+.services-container ul li a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #fcfcfc;
+}
+
+.services-container ul li a:hover {
+  color: #e64a19;
+}
+
+/* Contact Page Styles */
+.contact-container h2 {
+  font-size: 2.5rem;
+  color: #00bcd4;
+  margin-bottom: 20px;
+}
+
+.contact-container form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.contact-container form input,
+.contact-container form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-container form button {
+  background-color: #00bcd4;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-container form button:hover {
+  background-color: #0097a7;
+}
+
+/* Input Styling */
+input {
+  background-color: white;
+  color: black;
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+input:focus {
+  outline: none;
+  border-color: #00bcd4;
+}
+
+/* Override Default H1 Color */
+h1 {
+  color: #8e8e8e;
+}
